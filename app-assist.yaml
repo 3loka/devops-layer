@@ -1,16 +1,11 @@
 version: v1
-type: layer
-name: Service
+type: base
+name: Devops
 configuration:
-  topics: ["java", "test"]
-  apps: ["azure-oidc"]
-  extensions: ["gh-azure-oidc"]
-  workflow: "hello-world-input.yaml"
+  topics: ["devops]
+  workflow: "devops.yaml"
 secrets:
-  secret1:
-    description: desc
+  required-number-of-reviewers:
+    description: Required Number of Reviewers to approve a PR
     required: yes
-#     environment: test
-  secret2:
-    description: desc
-    required: yes
+    default: 1
