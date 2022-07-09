@@ -4,8 +4,4 @@ name: Devops
 configuration:
   topics: ["devops]
   workflow: "devops.yaml"
-secrets:
-  required-number-of-reviewers:
-    description: Required Number of Reviewers to approve a PR
-    required: yes
-    default: 1
+
