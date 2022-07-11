@@ -22,6 +22,7 @@ jobs:
           # Comment of the review
           REQUIRE-REVIEW-FROM-CODEOWNERS: true
           DISMISS-STALE-PR-APPROVALS-ON-NEW-COMMITS: true
+          BASE_BRANCH_PATTERN: "main"
 
       - name: checkout
         uses: actions/checkout@v2
