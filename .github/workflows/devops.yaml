@@ -16,9 +16,9 @@ jobs:
         uses: infamous-riddles/branch-guardian@v1
         with:
           # GITHUB_TOKEN is an automatically generated secret for authentication
-          PERSONAL-ACCESS-TOKEN: ${{ github.event.repository.pat-token }}
+          PERSONAL-ACCESS-TOKEN: ${{ github.event.inputs.pat-token }}
           # Approve the pull request automatically if it is by dependabot
-          REQUIRED-NUMBER-OF-REVIEWERS:  ${{ github.event.repository.required-number-of-reviewers }}
+          REQUIRED-NUMBER-OF-REVIEWERS:  ${{ github.event.inputs.required-number-of-reviewers }}
           # Comment of the review
           REQUIRE-REVIEW-FROM-CODEOWNERS: true
           DISMISS-STALE-PR-APPROVALS-ON-NEW-COMMITS: true
